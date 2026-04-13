@@ -54,16 +54,14 @@ router.get("/:day", async (req, res, next) => {
     const dayNum = days[day.toLowerCase()];
 
     if (dayNum === undefined) {
-      return res
-        .status(400)
-        .json({
-          success: false,
-          error: {
-            code: "BAD_REQUEST",
-            message:
-              "Invalid day. Use: sunday, monday, tuesday, wednesday, thursday, friday, saturday",
-          },
-        });
+      return res.status(400).json({
+        success: false,
+        error: {
+          code: "BAD_REQUEST",
+          message:
+            "Invalid day. Use: sunday, monday, tuesday, wednesday, thursday, friday, saturday",
+        },
+      });
     }
 
     const now = new Date();

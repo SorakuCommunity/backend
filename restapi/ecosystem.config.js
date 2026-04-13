@@ -1,7 +1,7 @@
 module.exports = {
   apps: [
     {
-      name: "restapi-anime",
+      name: "restapi",
       script: "src/index.js",
       interpreter: "none",
       instances: "max",

@@ -8,12 +8,10 @@ router.get("/search", async (req, res, next) => {
   try {
     const { q, page = 1, limit = 20 } = req.query;
     if (!q) {
-      return res
-        .status(400)
-        .json({
-          success: false,
-          error: { code: "BAD_REQUEST", message: "Query required" },
-        });
+      return res.status(400).json({
+        success: false,
+        error: { code: "BAD_REQUEST", message: "Query required" },
+      });
     }
 
     const cacheKey = `anilist:search:${q}:${page}:${limit}`;
@@ -101,12 +99,10 @@ router.get("/season", async (req, res, next) => {
   try {
     const { year, season } = req.query;
     if (!year || !season) {
-      return res
-        .status(400)
-        .json({
-          success: false,
-          error: { code: "BAD_REQUEST", message: "Year and season required" },
-        });
+      return res.status(400).json({
+        success: false,
+        error: { code: "BAD_REQUEST", message: "Year and season required" },
+      });
     }
 
     const cacheKey = `anilist:season:${year}:${season}`;

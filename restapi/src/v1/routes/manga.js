@@ -8,12 +8,10 @@ router.get("/search", async (req, res, next) => {
   try {
     const { q, page = 1, limit = 20 } = req.query;
     if (!q) {
-      return res
-        .status(400)
-        .json({
-          success: false,
-          error: { code: "BAD_REQUEST", message: "Query required" },
-        });
+      return res.status(400).json({
+        success: false,
+        error: { code: "BAD_REQUEST", message: "Query required" },
+      });
     }
 
     const cacheKey = `manga:search:${q}:${page}:${limit}`;
