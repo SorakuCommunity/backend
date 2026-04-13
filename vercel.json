@@ -13,10 +13,7 @@
     }
   ],
   "env": {
-    "NODE_ENV": "production",
-    "ANIFY_URL": "https://api.anify.eltik.cc",
-    "CONSUMET_URL": "https://api.consumet.org",
-    "JIKAN_URL": "https://api.jikan.moe/v4",
-    "HIANIME_URL": "https://api.hianime.to/api"
-  }
+    "NODE_ENV": "production"
+  },
+  "框架": "express"
 }

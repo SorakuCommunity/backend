@@ -7,7 +7,7 @@
 
 REST API untuk streaming anime dan manga dengan multi-source support, terintegrasi dengan Consumet API dan AniList.
 
-**Live API**: https://apistream.vercel.app
+**Live API**: https://apistreams.vercel.app
 
 ## Fitur
 
