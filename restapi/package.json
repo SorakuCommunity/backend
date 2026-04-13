@@ -1,5 +1,5 @@
 {
-  "name": "restapi-anime",
+  "name": "restapi",
   "version": "1.0.0",
   "description": "REST API for anime/manga streaming with Consumet support, AniList integration, Redis caching",
   "main": "src/index.js",
